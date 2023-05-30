@@ -1,0 +1,20 @@
+.container h1{
+    margin-top: 5rem;
+}
+
+.back_to_top{
+    position: fixed;
+    right: 7rem;
+    bottom: 2rem;
+}
+
+.result_search{
+    margin-top: 5rem;
+}
+
+/* ===== RESPONSIVE ===== */
+@media (max-width: 1440px) {
+    .back_to_top{
+        right: 0rem;
+    }
+}

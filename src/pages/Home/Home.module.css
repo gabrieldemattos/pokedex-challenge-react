@@ -1,0 +1,45 @@
+.container{
+    margin-block: 10rem 15rem;
+}
+
+.back_to_top{
+    position: fixed;
+    right: 7rem;
+    bottom: 2rem;
+}
+
+.pagination{
+    width: 100%;
+    display: flex;
+    margin-bottom: 3rem;
+    gap: .2rem;
+}
+
+.pagination button{
+    width: 100%;
+    height: 3rem;
+    border: none;
+    font-weight: bold;
+    background: #8e8ed650;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.pagination button.active{
+    background: var(--principal-color);
+}
+
+/* ===== RESPONSIVE ===== */
+@media (max-width: 1440px) {
+    .back_to_top{
+        right: 0rem;
+    }
+}
+
+
+@media (max-width: 425px) {
+    .container{
+        margin-block: 4rem 15rem;
+    }
+}

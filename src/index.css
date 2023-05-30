@@ -1,13 +1,72 @@
-body {
+*{
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Varela Round', sans-serif;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+html body{
+  background: #8e8ed623;
+  scroll-behavior: smooth;
+}
+
+:root{
+  font-size: 62.5%;
+  --principal-color: #8383f19d;
+}
+
+a{
+  text-decoration: none !important;
+}
+
+ul{
+  list-style: none;
+}
+
+.onload{
+  position: relative;
+  animation: load 1s ease-in-out;
+}
+
+@keyframes load {
+  0%{
+      transform: translateX(-100%);
+  }
+
+  100%{
+      transform: translateX(0);
+  }
+}
+
+.btn_add,
+.btn_remove{
+  padding: .5rem;
+  text-transform: uppercase;
+  cursor: pointer;
+  font-size: 1.2rem;
+  border: 1px solid #026302fa;
+  background: transparent;
+  font-weight: bold;
+  background: #fff;
+  transition: .2s ease-in;
+}
+
+.btn_add{
+  color: #095209fa;
+}
+
+.btn_add:hover{
+  background: #1fbb1fa1;
+  border: 1px solid #1fbb1fa1;
+  color: #000;
+}
+
+.btn_remove{
+  color: #eb1b1bee !important;
+  border: 1px solid #eb1b1bee !important;
+}
+
+.btn_remove:hover{
+  background: #eb1b1bee !important;
+  color: #fff !important;
 }

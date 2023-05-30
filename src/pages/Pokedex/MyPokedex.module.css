@@ -1,0 +1,385 @@
+.container{
+    margin-block: 5rem 6rem;
+}
+
+.clear_button{
+    padding: .5rem;
+    margin-block: 1rem 1.5rem;
+    width: 80%;
+    font-size: 1.2rem;
+    border: 1px solid #ff0000;
+    text-transform: uppercase;
+    background: transparent;
+    border-radius: 4px;
+    font-weight: bold;
+    color: #ff0000;
+    cursor: pointer;
+    transition: .3s ease;
+}
+
+.clear_button:hover{
+    background: #ff0000;
+    color: #fff;
+}
+
+.button{
+    border-bottom: 1px solid #cfcfcf;
+    margin-bottom: 2rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.wrapper{
+    display: flex;
+    gap: 3rem;
+}
+
+.pokemon_list{
+    border: 1px solid #000;
+    border-radius: 4px;
+    width: 25rem;
+    height: 75rem;
+    overflow: auto;
+}
+
+.pokemon_list ul{
+    margin-top: 1rem;
+    margin-right: 3rem;
+}
+
+.pokemon_list ul li {
+    display: flex;
+    align-items: center;
+    gap: .7rem;
+    font-size: 1.9rem;
+    margin-bottom: .7rem;
+    overflow-x: auto;
+    padding-bottom: .5rem;
+    cursor: pointer;
+    text-transform: capitalize;
+}
+
+.pokemon_list ul li span:first-child{
+    transition: .2s ease;
+    font-size: 1.7rem;
+}
+
+.pokemon_list ul li span:first-child:hover{
+    color: #ee1717c4;
+}
+
+.pokemon_list ul li span:last-child{
+    padding-top: .4rem;
+}
+
+.pokemon_list ul li::-webkit-scrollbar {    
+    height: .7rem;
+}
+  
+.pokemon_list ul li::-webkit-scrollbar-track {
+    background: #4b4a4a1e;        
+}
+  
+.pokemon_list ul li::-webkit-scrollbar-thumb {
+    background-color: #000000;    
+    border-radius: 20px;       
+}
+
+/* ========= POKEMON INFO =========== */
+.pokemon_info{
+    border: 1px solid #000;
+    width: 100%;
+    border-radius: 4px;
+}
+
+.pokemon_perfil{
+    max-height: 100%;
+}
+
+.perfil{
+    border-bottom: 1px solid #000;
+    text-align: center;
+    max-height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.perfil h1{
+    font-size: 4rem;
+    text-transform: uppercase;
+}
+
+.perfil img{
+    width: 20rem;
+    margin-block: 2rem;
+}
+
+.perfil form{
+    margin-bottom: 2rem;
+    display: flex;
+    flex-direction: column;
+    gap: .5rem;
+}
+
+.perfil_stats ul {
+    font-size: 2.5rem;
+    display: flex;
+    justify-content: center;
+    gap: 5rem;
+}
+
+.types ul{
+    display: flex;
+    justify-content: center;
+    gap: 5rem;
+    margin-bottom: 3rem;
+    font-size: 2rem;
+}
+
+.types ul li{
+    color: #000 !important;
+    font-weight: bold;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: .4rem;
+    border-radius: 2px;
+    white-space: nowrap;
+    text-transform: uppercase;
+    cursor: pointer;
+}
+
+.tab{
+    font-size: 5rem;
+}
+
+/* ======== STATS ======= */
+
+.stats{
+    display: flex;
+    column-gap: 5rem;
+    justify-content: center;
+    width: 100%;
+    height: 22rem;
+}
+
+.stat{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+.stat h2{
+    text-transform: uppercase;
+    margin-top: .6rem;
+}
+
+.base_stat{
+    background:#b8b8b87c;
+    border-radius: .6rem;
+    width: 3.5rem;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    height: 100%;
+}
+
+.base_stat div{
+    display: flex;
+    justify-content: center;
+    font-size: 1.6rem;
+    width: 100%;
+    max-height: 100%;
+    border-radius: .6rem;
+}
+
+/* ======== ABILITIES ======= */
+.hability{
+    height: 24rem;
+    display: flex;
+    gap: 2rem;
+}
+
+.abilities{
+    width: 30%;
+}
+
+.abilities ul{
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    margin-top: 2.5rem;
+    margin-left: 2rem;
+}
+
+.abilities ul li{
+    font-size: 1.8rem;
+    text-transform: uppercase;
+    font-weight: bold;
+    width: fit-content;
+    padding: .4rem;
+    border-radius: 3px;
+    color: #000;
+    cursor: pointer;
+}
+
+.short_effect{
+    text-align: center;
+    width: 70%;
+}
+
+.short_effect h2{
+    text-transform: capitalize;
+    font-weight: bold;
+}
+
+.short_effect h3{
+    margin-top: 5rem;
+}
+
+/* ======= EVOLUTIONS ======== */
+.evolutions{
+    height: 24rem;
+}
+
+.evolutions ul{
+    height: 100%;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.evolutions ul li{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    row-gap: 1.5rem;
+}
+
+.evolutions ul li h2{
+    text-transform: uppercase;
+    font-size: 2.6rem;
+    font-weight: bold;
+    cursor: pointer;
+    color: #000;
+}
+
+.evolutions ul li h3{
+    text-transform: capitalize;
+}
+
+.title{
+    text-align: center;
+    margin-top: 5rem;
+}
+
+/* ======== RESPONSIVE ======== */
+@media (min-width: 769px) and (max-width: 1024px) {
+    .stat h2{
+        font-size: 1.4rem;
+    }
+    
+}
+
+@media (max-width: 768px) {
+    .wrapper{
+        flex-direction: column;
+    }
+
+    .stat h2{
+        font-size: 1.2rem;
+    }
+
+    .pokemon_list{
+        border: 1px solid #000;
+        border-radius: 4px;
+        width: 100%;
+        height: 30rem;
+        overflow: scroll;
+    }
+}
+
+@media (max-width: 425px) {    
+    .stats{
+        gap: .5rem;
+        flex-direction: column;
+        padding-left: 1rem;
+    }
+
+    .stat{
+        flex-direction: row;
+        justify-content: flex-start;
+    }
+
+    .stat div{
+        order: 1;
+    }
+
+    .stat h2{
+        font-size: 1.5rem;
+    }
+
+    .stat h2::after{
+        content: ':';
+        margin-right: .5rem;
+    }
+
+    .base_stat{
+        height: fit-content !important;
+    }
+    
+    .base_stat div p{
+        margin: 0 auto;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .perfil h1{
+        font-size: 2rem;
+        text-transform: uppercase;
+    }
+
+    .hability{
+        gap: 4rem;
+    }
+    
+    .abilities ul{
+        margin-left: 1rem;
+    }
+    
+    .abilities ul li{
+        font-size: 1.5rem;
+    }    
+    
+    .short_effect h3{
+        margin-top: 0;
+        margin-right: 1rem;
+    }
+
+    .evolutions{
+        height: 50rem;
+    }
+    
+    .evolutions ul{
+        flex-direction: column;
+    }
+}
+
+@media (max-width: 375px) {
+    .hability{
+        gap: 6rem;
+    }
+    
+    .abilities ul{
+        margin-left: 0;
+    }
+    
+    .abilities ul li{
+        font-size: 1.4rem;
+    }    
+}

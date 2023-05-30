@@ -1,0 +1,269 @@
+.container .button{
+    height: 7rem;
+    display: flex;
+    align-items: center;
+    margin-bottom: 8rem;
+    padding-left: 10rem;
+    background: var(--principal-color);
+}
+
+.button button{
+    border: none;
+    background: transparent;
+    font-size: 4rem;
+    color: #6d6d6d;
+    transition: .2s ease-in;
+}
+
+.button button:hover{
+    color: #000;
+}
+
+.wrapper{
+    display: flex;
+    flex-direction: row;
+    padding: 2rem;
+    column-gap: 8rem;
+}
+
+.pokemon_perfil{
+    width: 435rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    order: 2;
+}
+
+.pokemon_perfil h1{
+    text-align: center;
+    font-size: 5rem;
+    color: #6d6d6d;
+    white-space: nowrap;
+}
+
+.pokemon_perfil img{
+    width: 100%;
+    margin-bottom: 2.5rem;
+}
+
+.pokemon_datas{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 2rem;
+    width: 435rem;
+    order: 1;
+}
+
+.hability_container,
+.type_container{
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.details,
+.abilities,
+.types{
+    display: flex;
+    align-items: center;
+    gap: 1.5rem;
+}
+
+.details h2:first-child,
+.data{
+    font-weight: bold;
+    width: 12rem;
+    text-align: right;
+    text-transform: capitalize;
+}
+
+.hability,
+.type{
+    color: #000 !important;
+    font-weight: bold;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: .4rem;
+    border-radius: 2px;
+    white-space: nowrap;
+}
+
+.hability{
+    cursor: pointer;
+}
+
+.pokemon_stats{
+    width: 435rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 2rem;
+    order: 3;
+}
+
+.stats{
+    display: flex;
+    flex-direction: column;
+    gap: 2rem; 
+}
+
+.stats h2{
+    text-transform: capitalize;
+}
+
+.stats_value{
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    gap: 1.5rem;
+}
+
+.stats_value h2:first-child{
+    font-weight: bold;
+    width: 20rem;
+    text-align: end;
+}
+
+.stats_value h2:nth-child(2){
+    color: #000000c0;
+    width: 5rem;
+}
+
+.short_effect p{
+    text-align: center;
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+/* ======== EVOLUTIONS ========== */
+.evolutions{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: flex-end;
+    margin-top: 5rem;
+}
+
+.evolution{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    transition: .3s ease-in;
+}
+
+.evolution div:first-child{
+    width: 20rem;
+    height: auto;
+    border-radius: 50%;
+    border: 3px solid #333232;
+    background: #5751512a;
+    cursor: pointer;
+    overflow: hidden;
+}
+
+.evolution img{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    object-fit: cover;
+    width: 100%;
+    height: auto;
+}
+
+.evolution div:last-child{
+    margin-top: 2rem;
+    text-transform: capitalize;
+}
+
+.evolution img:hover{
+    scale: 1.05;
+    transition: .3s ease-in;
+}
+
+.evolutions:has(.evolution:hover) >
+.evolution:not(:hover){
+    opacity: .6;
+}
+
+/* ===== RESPONSIVE ===== */
+@media (max-width: 1024px){
+
+    .abilities,
+    .types{
+    flex-direction: column;
+    gap: 1.5rem;
+    align-items: normal;
+}
+}
+
+@media (max-width: 768px) {
+    .wrapper{
+        width: 100%;
+        flex-direction: row;
+        align-items: center;
+        gap: 16rem;
+        flex-wrap: wrap;
+    }
+
+    .pokemon_datas{
+        width: 30%;
+    }
+
+    .pokemon_perfil{
+        width: 100%;
+        order: 0;
+        justify-content: center;
+    }
+
+    .pokemon_stats{
+        width: 30%;
+        align-items: flex-start;
+        justify-content: flex-start;
+    }
+    
+    .stats{
+        gap: 5rem; 
+    }
+}
+
+@media (max-width: 425px) {
+    .container .button{
+        padding-left: 3rem;
+    }
+
+    .pokemon_datas{
+        width: 100%;
+    }
+
+    .pokemon_stats{
+        width: 100%;
+    }
+
+    .abilities,
+    .types{
+    flex-direction: row;
+}
+
+    .evolutions{
+        flex-direction: column;
+        align-items: center;
+    }
+}
+
+@media (max-width: 320px) {
+    .pokemon_datas{
+        width: 100%;
+        justify-content: flex-start;
+    }
+
+    .details h2:first-child,
+    .data{
+        width: 8rem;
+    }
+
+    .stats_value h2:first-child{
+        width: 13rem;
+    }
+}

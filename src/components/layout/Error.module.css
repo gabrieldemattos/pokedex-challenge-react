@@ -1,0 +1,11 @@
+.error{
+    text-align: center;
+    margin-top: 10rem;
+    color: #f00e0ec2;
+}
+
+.error img{
+    width: 20%;
+    margin-bottom: 2rem;
+}
+  

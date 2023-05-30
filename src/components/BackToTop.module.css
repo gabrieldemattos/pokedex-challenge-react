@@ -1,0 +1,16 @@
+.button{
+    font-size: 4rem;
+    border: none;
+    background: transparent;
+    animation: showButton .2s ease;
+}
+
+@keyframes showButton {
+    0%{
+        transform: translateY(100%);
+    }
+    
+    100%{
+        transform: translateY(0);
+    }
+}
