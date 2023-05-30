@@ -28,7 +28,7 @@ Here are some screenshots of the project:
 _The home page provides quick access to your personal Pokédex, search for specific Pokémon, and a complete list of available Pokémon._
 
 ![Personal Pokedéx](screenshots/pokedex-list.png)
-_The personal Pokédex page displays all Pokémon added by the user. You can remove one or all Pokémon from the Pokédex at once. Additionally, you can access detailed information about any added Pokémon, including their stats, abilities, and evolutions._
+_The personal Pokédex page displays all Pokémon added by the user. You can remove one or all Pokémon from the Pokédex at once. Additionally, you can access detailed information about any added Pokémon, including their stats, abilities, and evolutions. It is also possible to change the Pokémon's image to any other image you prefer or like._
 
 ![Pokémon Page](screenshots/pokemon-page.png)
 _On the chosen Pokémon page, you can also view all its detailed information and add or remove it from your personal Pokédex._
