@@ -19,6 +19,7 @@ The Pokedéx allows users to search and view information about different Pokémo
 - [React Icons](https://react-icons.github.io/react-icons/): A library that provides a collection of icons for use in React projects.
 - [React Router DOM](https://reactrouter.com/en/main): A library that enables navigation between different pages in a React application.
 - [React Redux](https://react-redux.js.org/): A library for state management based on the Redux pattern.
+- [TypeScript](https://typescriptlang.org/): A superset of JavaScript with static typing to enhance the development experience, providing autocompletion and error detection during development. Commonly used with React applications for type safety and improved development.
 
 ## Project Screenshots
 

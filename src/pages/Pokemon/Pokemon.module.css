@@ -2,9 +2,14 @@
     height: 7rem;
     display: flex;
     align-items: center;
-    margin-bottom: 8rem;
-    padding-left: 10rem;
     background: var(--principal-color);
+}
+
+.container nav{
+    display: flex;
+    width: 100%;
+    align-items: center;
+    justify-content: space-around;
 }
 
 .button button{

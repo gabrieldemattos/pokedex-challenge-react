@@ -1,0 +1,20 @@
+.pokedex{
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    cursor: pointer;
+    color: #000000;
+    transition: .3s ease-in;
+}
+
+.pokedex:hover{
+    color: #000000b7;
+}
+
+.pokedex p{
+    font-size: 3rem;
+}
+
+.pokedex span{
+    font-size: 2rem;
+}
